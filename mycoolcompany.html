@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .hovedboks{
+            display:flex;
+        }
+
+        .venstre{
+            display:flex;
+            align-items: center;
+         
+        }
+        .venstre img {
+            margin-left: 20px;
+        }
+        .venstre h1 {
+            margin-left: 20px;
+        }
+
+        .høyre {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+         }
+
+         .høyre li:nth-of-type(3) {
+            color: rgb(65, 235, 39);
+         }
+
+         .lenker{
+            display: flex;
+            justify-content: left;
+            align-items: center;
+         }
+
+         li {
+            margin-left: 20px;
+            text-decoration:none ;
+         }
+
+    </style>
+</head>
+<body>
+    
+<header class="hovedboks">
+
+
+    <div class="venstre">
+        <img src="flagg.png" width="15%"   alt="">
+        <h1>My Cool Company</h1>
+    </div>
+
+
+    <div class="lenker">
+        <nav>
+            <ul class="høyre">
+                <li><a href="mycoolcompany.html">Home</a></li>
+                <li><a href="mycoolcompany.html">Away</a></li>
+                <li><a href="mycoolcompany.html">Somewhere</a></li>
+            </ul>
+        </nav>
+    </div>
+
+
+</header>
+
+
+
+Oppgave 2
+
+Du skal lage en  typisk header (<header>).
+
+
+* Legg inn en logo (bruk gjerne det norske flagget, og sett width til 15%)
+* legg inn en h1 med navnet på firmaet
+* legg inn en nav-bar (<nav>), inni den skal det være en <ul> og inni den 3 stk <li> med hver sin <a href> lenke til Home, 
+    Away, og Somewhere
+
+Målet er at du får alt på en linje:
+
+Logo helt til venstre, så firmanavnet like etter. Helt til høyre skal de 3 lenkene komme på rekke og rad
+
+Det betyr at de 2 elementene til venstre må være i én gruppe, og de 3 andre (lenkene) i en gruppe for seg. 
+Så brukes flexbox til å skyve gruppene fra hverandre vha justify-content: space-between
+
+
+
+
+
+</body>
+</html>
