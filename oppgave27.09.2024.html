@@ -4,18 +4,110 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    
+    <style>
+
+        :root{
+            --farge:#08f123;
+        }
+
+        .venstre {
+            display: flex;
+            align-items: center;
+        }
+
+        .høyre {
+            display: flex;
+            align-items: right;
+            justify-content: space-between
+         }
+
+        .lenker{
+            display: flex;
+            justify-content: left;
+            align-items: center;
+         }
+
+        .hovedflex {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        li {
+            margin: 20px;
+        }
+        h1 {
+            margin-left: 20px;
+            color: var(--farge)
+        }
+    </style>
 </head>
 <body>
 
-    <header>
+    <header class="hovedflex">
+        <nav class="venstre">
+            <h1>Oppgave27.09.2024</h1>
+        </nav>
+
+
+
+
+
+        <div class="lenker">
+            <nav>
+                <ul class="høyre">
+                    <li><a href="mycoolcompany.html">Home</a></li>
+                    <li><a href="mycoolcompany.html">Away</a></li>
+                    <li><a href="mycoolcompany.html">Somewhere</a></li>
+                </ul>
+            </nav>
+        </div>
 
 
     </header>
 
     <main>
 
-    
+    <div class="card"></div>
+
+       <p>Oppgaver
+
+Bruk de semantiske HTML elementene så mye som  mulig
+
+header>, nav, main>, section>, footer> for å dele inn siden i oversiktelige deler. <br>
+
+
+"nav""
+main
+section
+
+feks.b <br>
+
+1) Legg til en nav-bar, som har en tittel til venstre, og 3 linker til høyre. Bruk flexbox. (Tenk gruppering, 
+for å flytte flere elementer sammen til høyre) <br>
+
+2) definer 2 farger som variabler, og benytt disse på siden (det kan feks være bakgrunnsfarge, eller fontfarge) <br>
+
+3) lag en div med klasse 'Card' som en kan style, og bruk 3 slike cards inne i en i section. 
+Sett gjerne bakgrunnsfarge, et bilde, en overskrift (Navn) og Beskrivende tekst på hvert kort. Legg gjerne til 
+skyggeeffekt rundt "kortet". 
+Legg også gjerne til en :hover effekt, slik at det er tydelig at musen er over det enkelte kortet. <br>
+
+4) legg til 3 bilder (gjerne flaggene fra tidligere) og spre de utover horisontalt vha en flexbox i main <br>
+
+
+
+5)  @mediaquery - når bredden på vinduet blir mindre enn 768px, sett retningen på de 2 nederste flex-boxene (main, og section) 
+til å være vertical i stedet, 
+slik at innholdet kommer under hverandre i stedet. <br>
+
+------------
+
+6 Prøv å gjenskape nettsiden fra eksempelet i leksjonsnotatet. Tenk deg om hvordan du vil benytte flere flexboxer for 
+å gruppere og vise frem de ulike områdene på siden. 
+God planlegging sparer deg for mye arbeid. </p> 
     </main>
+
     
 </body>
 </html>

@@ -31,7 +31,7 @@
          .høyre li:nth-of-type(3) {
             color: rgb(65, 235, 39);
          }
-
+         
          .lenker{
             display: flex;
             justify-content: left;
@@ -41,6 +41,14 @@
          li {
             margin-left: 20px;
             text-decoration:none ;
+         }
+
+         .høyre li:nth-of-type(3) a {
+            color: green;
+         }
+
+         .høyre li {
+            list-style-type: none;
          }
 
     </style>
@@ -59,9 +67,9 @@
     <div class="lenker">
         <nav>
             <ul class="høyre">
-                <li><a href="mycoolcompany.html">Home</a></li>
-                <li><a href="mycoolcompany.html">Away</a></li>
-                <li><a href="mycoolcompany.html">Somewhere</a></li>
+                <li><a href="mycoolcompany.html" style="color: yellow;">Home</a></li>
+                <li><a href="mycoolcompany.html" style="color: rgb(85, 15, 215);">Away</a></li>
+                <li><a href="mycoolcompany.html" style="color: red;">Somewhere</a></li>
             </ul>
         </nav>
     </div>
@@ -69,24 +77,24 @@
 
 </header>
 
+<p>Oppgave 2
+
+    Du skal lage en  typisk header (<header>).
+    
+    
+    * Legg inn en logo (bruk gjerne det norske flagget, og sett width til 15%)
+    * legg inn en h1 med navnet på firmaet
+    * legg inn en nav-bar (<nav>), inni den skal det være en <ul> og inni den 3 stk <li> med hver sin <a href> lenke til Home, 
+        Away, og Somewhere
+    
+    Målet er at du får alt på en linje:
+    
+    Logo helt til venstre, så firmanavnet like etter. Helt til høyre skal de 3 lenkene komme på rekke og rad
+    
+    Det betyr at de 2 elementene til venstre må være i én gruppe, og de 3 andre (lenkene) i en gruppe for seg. 
+    Så brukes flexbox til å skyve gruppene fra hverandre vha justify-content: space-between</p>
 
 
-Oppgave 2
-
-Du skal lage en  typisk header (<header>).
-
-
-* Legg inn en logo (bruk gjerne det norske flagget, og sett width til 15%)
-* legg inn en h1 med navnet på firmaet
-* legg inn en nav-bar (<nav>), inni den skal det være en <ul> og inni den 3 stk <li> med hver sin <a href> lenke til Home, 
-    Away, og Somewhere
-
-Målet er at du får alt på en linje:
-
-Logo helt til venstre, så firmanavnet like etter. Helt til høyre skal de 3 lenkene komme på rekke og rad
-
-Det betyr at de 2 elementene til venstre må være i én gruppe, og de 3 andre (lenkene) i en gruppe for seg. 
-Så brukes flexbox til å skyve gruppene fra hverandre vha justify-content: space-between
 
 
 
